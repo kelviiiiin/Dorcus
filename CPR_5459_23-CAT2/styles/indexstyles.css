@@ -1,0 +1,339 @@
+/*
+Name: Dorcas Lotodo
+Reg.No: CPR/5459/23
+*/
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    background: #FFFEF5;
+    color: #1A1400;
+    font-family: 'DM Sans', sans-serif, Arial;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    padding: 1rem 1.8rem;
+    z-index: 1;
+    background: #FFFEF5;
+    border-bottom: 1px solid #D4A017;
+}   
+
+
+header span {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: #F5B800;
+    letter-spacing: -0.5px;
+    text-shadow: #0A0A0A;
+}
+
+
+nav {
+    display: flex;  
+    justify-content:flex-end;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.btn {
+    background-color: #F5B800;
+    color:black;
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid #3B2E00;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border-color: #B8860B;
+    background:#D4A017;
+    box-shadow: 0 4px 20px rgba(245,184,0,0.35);
+}
+
+main {
+    background-image: url("../images/community_connect_series.jpeg");
+    background-size:cover;
+    background-position:center;
+    min-height:500px;
+    padding: 7rem 2.5rem;
+    text-align: center;
+    position: relative;
+}
+
+.main-tag {
+    display: inline-block;
+    background: rgba(245,184,0,0.12);
+    border: 1px solid rgba(245,184,0,0.3);
+    color: #F5B800;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 0.35rem 1rem;
+    border-radius: 2px;
+    margin-bottom: 1.8rem;
+}
+
+main h1 {
+    font-family: serif;
+    font-size: clamp(2.6rem, 6vw, 5rem);
+    font-weight: 900;
+    line-height: 1.05;
+    color: #FFFFFF;
+    max-width: 760px;
+    margin: 0 auto 1.5rem;
+        }
+
+main h1 em {
+    font-style: italic;
+    color: #F5B800;
+}
+
+main p {
+    color: var(--white-dim);
+    font-size: 1.1rem;
+    max-width: 480px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.7;
+    animation: fadeUp 0.7s 0.2s ease both;
+}
+
+.main-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: fadeUp 0.7s 0.3s ease both;
+}
+
+.stats-bar {
+    display:flex;
+    background: #1A1400;
+    justify-content:space-around;
+    gap:4rem;
+    padding: 1.5rem 1.8rem;
+    margin: 0;
+}
+
+
+.stat { text-align: center; }
+
+.stat-num {
+    font-family:serif, Arial;
+    font-size: 3rem;
+    font-weight: 300;
+    color: #F5C842;
+    display: block;
+}
+
+.stat-label {
+    display:block;
+    font-size: 0.78rem;
+    color: #FDE992;
+    letter-spacing: 0.08em;
+    margin-top: 5px; margin-bottom: 5px;
+}
+
+.gallery-section{
+    padding: 3.8rem 1.8rem;
+    background-color: #FFFEF5;
+}
+
+.gallery-section h2{
+    font-family: serif;
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #D4A017;
+    padding-bottom: 12px;
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap:wrap;
+    gap: 1.5rem;
+}
+
+.item {
+    background: white;
+    border: 1px solid #e8d5a0;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    cursor: pointer;
+    width: 230px;
+}
+
+.item:hover {
+    border-color:#D4A017;
+}
+
+.item:hover .image { transform: scale(1.04); }
+
+.image-wrap {
+    overflow: hidden;
+    width:100%;
+    height: 10rem;
+    background-color:#FDF7DC;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow:hidden;       
+    display:block;
+}
+
+.info{
+    padding: 1.1rem 1.2rem 1.3rem;
+}
+
+.info p:first-child {
+    font-family: serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1A1400;
+}
+
+.info p:nth-child(2) {
+    color: #B8860B;
+    font-size: px;
+}
+
+.info p:nth-child(3) {
+    color: #7A6830;
+    font-size: 0.8rem;
+}
+
+.info p:last-child {
+    font-weight: 600;
+    color: #1A1400;
+    margin-top: 0.4rem;
+}
+
+.table-section {
+    margin: 0 auto;
+    padding: 3.8rem 1.8rem;
+    background-color: #FFFEF5;
+    overflow-x: auto;
+}
+
+.table-section h2 {
+    font-family: serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #1A1400;
+    margin-bottom: 1.5rem;
+}
+
+.events-table {
+    width: 100%;
+    border-collapse: collapse;
+    background:white;
+    font-size: 0.88rem;
+    border:1px solid #e8d5a0;
+}
+
+.events-table th {
+    background:#1A1400;
+    color:#FDE992;
+    padding: 0.9rem 1rem;
+    text-align: left;
+    font-size: 0.85rem;
+    letter-spacing: 0.12rem;
+    font-weight: 600;
+}
+
+.events-table td {
+    padding: 0.8rem 1rem;
+    color: #3B2E00;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #e8d5a0;
+}
+
+ .events-table tr:last-child td {
+    border-bottom: none;
+}
+
+.events-table tr:hover td {
+    background-color: #FDF7DC;
+}
+
+.events-table td:first-child {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1A1400;
+}
+
+.events-table td:last-child {
+    color: #B8860B;
+    font-weight: 600;
+}
+
+footer {
+    background:#1A1400;
+    padding: 4rem 2rem 2rem;
+    text-align:center;
+}
+
+footer p {
+    color: #FDE992;
+    margin-bottom: 1.2rem;
+    font-size: 1.4rem;
+    font-family: serif;
+    font-weight: 300;
+}
+
+footer label {
+    color: #FDE992;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+footer form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+footer input {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.9rem;
+    padding: 0.6rem 0.9rem;
+    background-color: rgba(255, 254, 245, 0.08);
+    border: 1px solid #D4A017;
+    color: white;
+    width: 200px;
+    outline: none;
+}
+
+ footer p:last-child {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.8rem;
+    color: rgba(253, 233, 146, 0.4);
+    margin-bottom: 0;
+}
+
+

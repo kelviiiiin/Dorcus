@@ -1,0 +1,155 @@
+<!-- 
+ Name: Dorcas Lotodo
+ Reg.No: CPR/5459/23
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap">
+    <link rel ="stylesheet" href="styles/contactstyles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><button>Find my events</button></a>
+            <a href="form.html"><button>Sign in</button></a>
+            <a href="form.html"><button>Create Events</button></a>
+        </nav>
+    </header>
+
+    <div class="page-banner">
+        <h1>Get in Touch</h1>
+        <p>Have a question, partnership idea, or want to list your event? We'd love to hear from you.</p>
+    </div>
+
+    <div class="contact-section">
+
+        <div class="contact-form-wrapper">
+            <h2>Send us a message</h2>
+            <p>Fill in the form below and we'll get back to you within 24 hours on business days.</p>
+
+            <form class="contact-form" action="/contact" method="POST">
+                <div class="form-row">
+                    <div class="field">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="first_name" class="input" placeholder="e.g. Amara">
+                    </div>
+                    <div class="field">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="last_name" class="input" placeholder="e.g. Oduya">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="contact-email">EMAIL ADDRESS</label>
+                    <input type="email" id="contact-email"  class="input" name="email" placeholder="you@example.com" required>
+                </div>
+
+                <div class="field">
+                    <label for="phone">PHONE NUMBER (OPTIONAL)</label>
+                    <input type="tel" id="phone" class="input" name="phone" placeholder="+254 700 000 000">
+                </div>
+
+                <div class="field">
+                    <label for="subject">SUBJECT</label>
+                    <select id="subject" name="subject">
+                        <option value="" disabled selected>Select a topic</option>
+                        <option value="general">General Enquiry</option>
+                        <option value="list-event">List My Event</option>
+                        <option value="partnership">Partnership / Sponsorship</option>
+                        <option value="ticket">Ticketing Issue</option>
+                        <option value="press">Press &amp; Media</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="message">MESSAGE</label>
+                    <textarea id="message" name="message" placeholder="Tell us how we can help you..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">SEND MESSAGE</button>
+            </form>
+        </div>
+
+    </div>
+
+    <section class="table-section">
+        <h2>Who Should You Contact?</h2>
+        <p>Not sure who to reach out to? Use this table to find the right person for your enquiry.</p>
+
+        <table class="events-table">
+            <thead>
+                <tr>
+                    <th>Department</th>
+                    <th>Contact Person</th>
+                    <th>Best For</th>
+                    <th>Email</th>
+                    <th>Response Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>General Enquiries</td>
+                    <td>Aisha Mwangi</td>
+                    <td>Any question not listed below</td>
+                    <td>hello@nairobiEvents.co.ke</td>
+                    <td>Within 24 hrs</td>
+                </tr>
+                <tr>
+                    <td>Event Listings</td>
+                    <td>Brian Otieno</td>
+                    <td>Submitting or updating an event</td>
+                    <td>listings@nairobiEvents.co.ke</td>
+                    <td>Within 48 hrs</td>
+                </tr>
+                <tr>
+                    <td>Ticketing Support</td>
+                    <td>Zawadi Kamau</td>
+                    <td>Ticket issues, refunds, confirmations</td>
+                    <td>tickets@nairobiEvents.co.ke</td>
+                    <td>Within 12 hrs</td>
+                </tr>
+                <tr>
+                    <td>Partnerships & Sponsorships</td>
+                    <td>David Njoroge</td>
+                    <td>Brand deals, co-hosting, sponsorships</td>
+                    <td>partners@nairobiEvents.co.ke</td>
+                    <td>Within 2 days</td>
+                </tr>
+                <tr>
+                    <td>Press & Media</td>
+                    <td>Lydia Cherono</td>
+                    <td>Interviews, features, media passes</td>
+                    <td>press@nairobiEvents.co.ke</td>
+                    <td>Within 24 hrs</td>
+                </tr>
+                <tr>
+                    <td>Technical Support</td>
+                    <td>Samuel Kariuki</td>
+                    <td>Website bugs, account access issues</td>
+                    <td>tech@nairobiEvents.co.ke</td>
+                    <td>Within 6 hrs</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>Subscribe now to access the latest events on time!</p>
+        <form>
+            <label for="footer-email">Email</label>
+            <input type="email" placeholder="e.g. example@gmail.com" id="footer-email">
+            <label for="footer-name">Name</label>
+            <input type="text" placeholder="e.g. Doe" id="footer-name">
+            <button type="submit">Subscribe</button>
+        </form>
+        <p>&copy; 2026 Dorcas Lotodo. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

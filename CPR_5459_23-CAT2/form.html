@@ -1,0 +1,73 @@
+<!-- 
+ Name: Dorcas Lotodo
+ Reg.No: CPR/5459/23
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap">
+    <link rel = "stylesheet" href = "styles/formstyles.css">
+</head>
+<body>
+
+    
+
+    <div class="card">
+        <a href="index.html" class="back-link">Back to Events</a>
+
+        <div class="logo">EventHive</div>
+
+        <span class="card-tag">JOIN FREE</span>
+        <h2>Welcome!</h2>
+        <p class="card-sub">Sign up to access, book, and manage your events.</p>
+
+        <div class="reasons">
+            <p>WHAT YOU GET:</p>
+            <div class="reason-item">Early access to new events</div>
+            <div class="reason-item">Personalised event recommendations</div>
+            <div class="reason-item">One-click ticket booking</div>
+        </div>
+
+        <main>
+            <form action="/signup" method="POST">
+
+                <div class="field">
+                    <label for="user-name">USERNAME</label>
+                    <input type="text" id="user-name" name="username" placeholder = "e.g Dorcas Lotodo">
+                </div>
+
+                <div class="field">
+                    <label for="email-signin">EMAIL ADDRESS</label>
+                    <input type="email" id="email-signin" name="email" placeholder="e.g. hello@example.com" required>
+                </div>
+
+                <div class="field">
+                    <label for="password-signin">PASSWORD</label>
+                    <input type="password" id="password-signin" name="password" minlength="8" required>
+                </div>
+
+                <p class="field-hint" id="strength-text">Use 8+ characters with numbers and symbols for a strong password.</p>           
+
+                <button type="submit" class="btn-submit">Create My Account</button>
+            </form>
+
+        </main>
+        
+        <div class="divider">
+            <div class="divider-line"></div>
+            <span>Already have an account?</span>
+            <div class="divider-line"></div>
+        </div>
+
+        <p class="signin-prompt"><a href="#">Sign in here</a></p>
+    </div>
+
+    <p class="form-footer">
+        By signing up you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+    </p>
+
+</body>
+</html>

@@ -1,0 +1,305 @@
+/*
+Name: Dorcas Lotodo
+Reg.No: CPR/5459/23
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    background-color: #FFFEF5;
+    color: #1A1400;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: #FFFEF5;
+    border-bottom: 1px solid #D4A017;
+    padding: 1rem 1.8rem;
+    position: sticky;
+    top: 0;
+}
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            gap: 0.6rem;
+        }
+
+        nav button {
+            background-color: transparent;
+            border: 1px solid transparent;
+            color: #000000;
+            font-size: 0.8rem;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+        }
+
+nav button:hover {
+    color: #1A1400;
+    border: 1px solid #D4A017;
+    background-color: #B8860B;
+}
+
+nav a button {
+            background-color: #D4A017;
+            color: white;
+            border: 1px solid #D4A017;
+        }
+
+.page-banner {
+    background-color: #1A1400;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.page-banner h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.2rem;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 0.8rem;
+}
+
+.page-banner p {
+    font-size: 1rem;
+    color: #FDE992;
+    font-weight: 300;
+}
+
+.contact-section {
+    padding: 3.8rem 2.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    gap: 3.1rem;
+}
+
+.contact-form-wrapper {
+    flex: 2;
+}
+
+.contact-form-wrapper h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.3rem;
+    font-weight: 300;
+    color: #1A1400;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form-wrapper p {
+    font-size: 14px;
+    color: #7A6830;
+    margin-bottom: 28px;
+    line-height: 1.6;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+}
+
+label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #7A6830;
+    letter-spacing: 1px;
+}
+
+.input, select, textarea {
+    font-family: 'Jost', sans-serif;
+    font-size: 14px;
+    padding: 10px 14px;
+    border: 1px solid #e8d5a0;
+    background-color: #FDF7DC;
+    color: #1A1400;
+    width: 100%;
+    outline:none ;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #c4aa70;
+}
+
+select {
+    cursor: pointer;
+}
+
+textarea {
+    height: 140px;
+    resize: vertical;
+}
+
+.submit-button {
+    font-family: 'Jost', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 13px 30px;
+    background-color: #D4A017;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 6px;
+}
+
+.submit-button:hover {
+    background-color: #B8860B;
+}
+
+footer {
+    background-color: #1A1400;
+    border-top: 1px solid rgba(212, 160, 23, 0.3);
+    padding: 50px 30px;
+    text-align: center;
+}
+
+footer p {
+    color: #FDE992;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+}
+
+footer form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+footer label {
+    color: #FDE992;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+footer input {
+    font-family: 'Jost', sans-serif;
+    font-size: 14px;
+    padding: 10px 14px;
+    background-color: rgba(255, 254, 245, 0.08);
+    border: 1px solid #D4A017;
+    color: white;
+    width: 200px;
+    outline: none;
+}
+
+footer input::placeholder {
+    color: rgba(253, 233, 146, 0.4);
+}
+
+footer button {
+    font-family: 'Jost', sans-serif;
+    font-size: 13px;
+    padding: 10px 22px;
+    background-color: #D4A017;
+    border: 1px solid #D4A017;
+    color: white;
+    cursor: pointer;
+}
+
+footer button:hover {
+    background-color: #B8860B;
+}
+
+footer p:last-child {
+    font-family: 'Jost', sans-serif;
+    font-size: 12px;
+    color: rgba(253, 233, 146, 0.4);
+    margin-bottom: 0;
+}
+
+.table-section {
+    padding: 60px 40px;
+    background-color: white;
+    border-top: 1px solid #e8d5a0;
+}
+
+.table-section h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+    font-weight: 300;
+    color: #1A1400;
+    margin-bottom: 8px;
+}
+
+.table-section p {
+    font-size: 14px;
+    color: #7A6830;
+    margin-bottom: 28px;
+}
+
+.events-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFFEF5;
+    border: 1px solid #e8d5a0;
+}
+
+.events-table th {
+    background-color: #1A1400;
+    color: #FDE992;
+    padding: 14px 16px;
+    text-align: left;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.events-table td {
+    padding: 12px 16px;
+    color: #3B2E00;
+    font-size: 14px;
+    border-bottom: 1px solid #e8d5a0;
+}
+
+.events-table tr:last-child td {
+    border-bottom: none;
+}
+
+.events-table tr:hover td {
+    background-color: #FDF7DC;
+}
+
+.events-table td:first-child {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1A1400;
+}
+
+.events-table td:nth-child(4) {
+    color: #B8860B;
+    font-size: 13px;
+}
+
+.events-table td:last-child {
+    color: #7A6830;
+    font-size: 13px;
+}
